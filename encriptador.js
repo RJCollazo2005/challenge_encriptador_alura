@@ -49,4 +49,8 @@ function copiar() {
     .catch(err => {
       console.error('No se pudo copiar el resultado al portapapeles: ', err);
     });
-}
+}  
+
+function eliminarMayusculasYCaracteresEspeciales(elemento) {
+      elemento.value = elemento.value.toLowerCase().replace(/[^a-z0-9\s]/gi, '');
+    }
