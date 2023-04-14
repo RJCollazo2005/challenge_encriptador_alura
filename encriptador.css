@@ -1,120 +1,72 @@
 body {
-  background-color: #0a192f;
-  color: #ccd6f6;
-  font-family: 'Roboto', sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+header {
+  background-color: #222;
+  padding: 20px;
 }
 
 h1 {
-  text-align: center;
-  margin-top: 20px;
+  margin: 0;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+main {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 
-#mensaje, #resultado {
-  background-color: #172a45;
-  border: none;
-  border-radius: 5px;
-  color: #ccd6f6;
-  font-size: 16px;
-  margin: 10px 0;
-  padding: 10px;
-  resize: none;
-  width: 100%;
-}
-
-#mensaje:focus, #resultado:focus {
-  outline: none;
-}
-
-#mensaje {
-  height: 120px;
-}
-
-#botones {
+.button-group {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.boton {
-  background-color: #1f4068;
+button {
+  background-color: #0072c6;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
   border: none;
   border-radius: 5px;
-  color: #ccd6f6;
   cursor: pointer;
-  font-size: 16px;
-  margin: 0 10px;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  width: 120px;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #1b2a40;
+  background-color: #005ea2;
 }
 
-.boton:active {
-  transform: scale(0.98);
+.output-group {
+  margin-top: 20px;
 }
 
-#resultado {
-  height: auto;
-  min-height: 120px;
-}
-
-#copy {
-  display: none;
-}
-
-#copy:target {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-
-#copy .alert {
-  background-color: #1f4068;
-  border-radius: 5px;
-  color: #ccd6f6;
-  font-size: 16px;
-  margin: 20% auto;
-  max-width: 600px;
-  padding: 20px;
-  text-align: center;
-}
-
-#copy .alert button {
-  background-color: #ccd6f6;
-  border: none;
-  border-radius: 5px;
-  color: #1f4068;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
+footer {
+  background-color: #222;
   padding: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-#copy .alert button:hover {
-  background-color: #0a192f;
-  color: #ccd6f6;
-}
-
-@media screen and (max-width: 768px) {
-  #botones {
-    flex-direction: column;
-  }
-  .boton {
-    margin: 10px 0;
-    width: 100%;
-  }
+  text-align: center;
+  font-size: 14px;
 }
 
 
