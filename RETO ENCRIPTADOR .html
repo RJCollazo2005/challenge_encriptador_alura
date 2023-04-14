@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Encriptador</title>
-  <link rel="stylesheet" type="text/css" href="encriptador.css">
- 
+  <link rel="stylesheet" href="encriptador.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Encriptador</h1>
-    <div class="input-wrapper">
-      <textarea id="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+  <header>
+    <h1>ENCRIPTADOR</h1>
+  </header>
+  <main>
+    <div class="input-group">
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" oninput="eliminarMayusculasYCaracteresEspeciales(this)"></textarea>
+      <p style="color:red">Nota: No se permiten letras en mayúsculas ni caracteres especiales en este campo.</p>
     </div>
-    <div class="button-wrapper">
+    <div class="button-group">
       <button onclick="encriptar()">Encriptar</button>
       <button onclick="desencriptar()">Desencriptar</button>
       <button onclick="copiar()">Copiar</button>
     </div>
-    <div class="input-wrapper">
-      <textarea id="resultado" placeholder="Aquí aparecerá el resultado"></textarea>
+    <div class="output-group">
+      <label for="resultado">Resultado:</label>
+      <textarea id="resultado" readonly></textarea>
     </div>
-  </div>
+  </main>
+  <footer>
+    <p></p>
+  </footer>
   <script src="encriptador.js"></script>
+  
 </body>
 </html>
+
